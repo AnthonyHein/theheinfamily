@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Hein's family website.">
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="vendors/css/all.min.css">
+        <title>The Hein Family</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    </head>
+
+    <body>
+        <header>
+        <nav>
+            
+        </nav>
+            <div class="welcome">
+                <h1>Welcome.<br>We are glad to see you.</h1>
+                <div class="buttons">
+                    <button class="button is-info is-rounded js--scroll-to-form">Say Hello</button>
+                    &nbsp;
+                    <button class="button is-info is-rounded is-outlined js--scroll-to-form">Drop a Line</button>
+                </div>
+            </div>
+            
+            <div class="welcome-2">
+                <div class="container has-text-centered">
+                    <h4>Welcome.<br>We are glad to see you.</h4>
+                </div>
+            </div>
+        </header>
+        
+        
+        <section class="section about-us">
+            <div class="container">
+                <h2>Who are we?</h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-centered">
+                        <p>We are a modern family living in this modern world. We are known for being rather rambunctious and quirky. Perhaps a good way to go about this is to imagine mixing all the flaws of the Goldberg's, a pinch of the drama of the Kardashian's, and the idiocy of the criminals in <em>Home Alone 3</em>.<br><br>Usually, we are just trying to make the most of the situation.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        
+        
+        <section class="section squad">
+            <div class="container">
+                <h2>Meet the squad</h2>
+                <div class="columns is-centered">
+                    <div class="column is-narrow member">
+                        <figure class="image is-128x128 black-bg">
+                            <a href="anthonys.html"><img onmouseover="anthonysBio()" onmouseout="noBio()" class="is-rounded" src="resources/img/anthonys.JPG" alt="Anthony S. Hein"></a>
+                        </figure>
+                    </div>    
+                    <div class="column is-narrow member">
+                        <figure class="image is-128x128 black-bg">
+                            <a href="dawn.html"><img onmouseover="dawnBio()" onmouseout="noBio()" class="is-rounded" src="resources/img/dawn.JPG" alt="Dawn Hein"></a>
+                        </figure>
+                    </div>
+                    <div class="column is-narrow member">
+                        <figure class="image is-128x128 black-bg">
+                            <a href="anthony.html"><img onmouseover="anthonyBio()" onmouseout="noBio()" class="is-rounded" src="resources/img/anthony.JPG" alt="Anthony N. Hein"></a>
+                        </figure>
+                    </div>
+                    <div class="column is-narrow member">
+                        <figure class="image is-128x128 black-bg">
+                            <a href="michael.html"><img onmouseover="michaelBio()" onmouseout="noBio()" class="is-rounded" src="resources/img/michael.JPG" alt="Michael Hein"></a>
+                        </figure>
+                    </div>
+                    <div class="column is-narrow member">
+                        <figure class="image is-128x128 black-bg">
+                            <a href="nicholas.html"><img onmouseover="nicholasBio()" onmouseout="noBio()" class="is-rounded" src="resources/img/nicholas.JPG" alt="Nicholas Hein"></a>
+                        </figure>
+                    </div>
+                </div>
+                <br>
+                <div class="box" id="bio-box">
+                <span id="current-bio">Hover over an image to reveal a short bio about that squad member.</span>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="section dog">
+            <div class="container has-text-centered">
+                <h2>We have a dog!</h2>
+                <i class="fas fa-dog"></i><br>
+                Our dearest, Shadow.
+            </div>
+        </section>
+        
+        <section class="section extended-family">
+            <div class="container has-text-centered">
+                <h2>More Hein's</h2>
+                Can't get enough of us? Explore our extended family.<br>
+                <span id="show-more-family" onclick="showFamily();"><span id="show-more-family-text">Show More&nbsp;&nbsp;</span><i class="fas fa-caret-down" id="show-more-family-icon"></i></span>
+                <ul class="ul" id="extended-family-list">
+                    <li class="li">John Hein</li>
+                    <li class="li">Jean Hein</li>
+                    <li class="li">Tina Hein</li>
+                    <li class="li">Michael Hein</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <section class="section contact-form js--section-form">
+        <div class="container">
+            <h2>Drop us a line</h2>
+            <div class="columns is-centered">  
+                <div class="column is-6">
+
+                <div class="kwes-form">
+                    <form method="POST" id="contact-form" action="https://kwes.io/api/foreign/forms/upLRwiSORU6dtZz4vBTg">
+                        
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" name="name" placeholder="John Doe">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                        
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" name="email" placeholder="jdoe@gmail.com">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <label class="label">Comment</label>
+                        <div class="control has-icons-left">
+                            <textarea class="input" name="comment" form="contact-form">Hello Hein's!</textarea><br>  
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-comment"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="reset" name="reset" class="button is-danger is-outlined is-small reset-btn">Clear</button>
+                    <button type="submit" name="submit" class="button is-info is-outlined is-small submit-btn">Submit</button>
+                    <br>
+                    </form>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <section class="section about-page">
+            <div class="container">
+                <h2>Acknowledgements</h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-centered">
+                        <p>This page was created by <a href="anthony.html">Anthony N. Hein</a> with JavaScript, HTML5, CSS3, <a href="https://bulma.io/">Bulma.io</a>, and <a href="https://jquery.com/">jQuery</a>. The domain was registered with <a href="https://www.godaddy.com/">GoDaddy</a> and Amazon S3 from <a href="https://aws.amazon.com/">Amazon Web Services</a> was used for web hosting. Anthony is currently studying computer science at Princeton University. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <footer>
+            <div class="content">
+            <br>
+            <p>Copyright &copy; 2020 by theheinfamily. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <script src="vendors/js/jquery-3.5.1.min.js"></script>
+        <script src="https://kwes.io/js/kwes.js"></script>
+        <script src="resources/js/bio-hover-script.js"></script>
+        <script src="resources/js/show-family-script.js"></script>
+        <script src="resources/js/scroll-script.js"></script>
+    </body>
+    
+</html>
