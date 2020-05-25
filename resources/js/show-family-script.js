@@ -1,5 +1,4 @@
 function showFamily() {
-    console.log('Reached here.');
     if ($('#show-more-family-icon').hasClass('fa-caret-down')) {
         $('#show-more-family-icon').removeClass('fa-caret-down');
         $('#show-more-family-icon').addClass('fa-caret-up');

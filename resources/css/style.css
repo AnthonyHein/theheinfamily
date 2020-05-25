@@ -120,6 +120,10 @@ header {
 /* EXTENDED FAMILY */
 /* ----------------------------------------------- */
 
+.extended-family {
+    background-color: #f8f8f8;
+}
+
 .extended-family #show-more-family {
     color: #0099FF;
     border-radius: 10px;
@@ -136,17 +140,45 @@ header {
     display: none;
 }
 
- 
-
 /* ----------------------------------------------- */
-/* FOOTER */
+/* HONORABLE HEIN */
 /* ----------------------------------------------- */
 
-footer {
+.honorable-hein {
     background-color: #1e2a45;
     color: #f8f8f8;
-    font-size: 70%;
-    text-align: right;
+}
+
+.honorable-hein h2:after {
+    display: block;
+    height: 2px;
+    background-color: #9f9f9f;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.honorable-lottery {
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 8px;
+    font-weight: 200;
+    margin-bottom: 50px;
+    background-color: #f8f8f8;
+    color: #1e2a45;
+}
+
+.honorable-hein-entry {
+    display: none;
+    font-size: 150%;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.honorable-hein-entry a {
+    color: #bed3ff;
 }
 
 
@@ -164,6 +196,18 @@ footer {
 
 .submit-btn {
     float: right;
+}
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #1e2a45;
+    color: #f8f8f8;
+    font-size: 70%;
+    text-align: right;
 }
 
 

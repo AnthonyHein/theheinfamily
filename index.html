@@ -7,10 +7,12 @@
         
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="vendors/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
         <title>The Hein Family</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        
     </head>
 
     <body>
@@ -94,6 +96,13 @@
             </div>
         </section>
         
+        <section class="section gallery">
+            <div class="container has-text-centered">
+                <h2>Gallery</h2>
+                Some stylish photos we would like to share with you all.<br>
+            </div>
+        </section>
+        
         <section class="section extended-family">
             <div class="container has-text-centered">
                 <h2>More Hein's</h2>
@@ -105,6 +114,19 @@
                     <li class="li">Tina Hein</li>
                     <li class="li">Michael Hein</li>
                 </ul>
+            </div>
+        </section>
+        
+        <section class="section honorable-hein">
+            <div class="container has-text-centered">
+                <h2>Honorable Hein's</h2>
+                <span>These people aren't Hein's, but they are as close to us as it gets.</span><br>
+                <button onclick="generateHonorableHein()" class="honorable-lottery button">Generate an Honorable Hein</button>
+                <input type="hidden" id="last-generate" value="-1">
+                <div class="honorable-hein-entry 0"><a href="anthony.html">Briana Macedo</a></div>
+                <div class="honorable-hein-entry 1"><a href="anthony.html">Nathan Fielder</a></div>
+                <div class="honorable-hein-entry 2"><a href="anthony.html">Obi-Wan Kenobi</a></div>
+                <div class="honorable-hein-entry 3"><a href="anthony.html">Dr. Phil</a></div>
             </div>
         </section>
         
@@ -175,7 +197,7 @@
         <footer>
             <div class="content">
             <br>
-            <p>Copyright &copy; 2020 by theheinfamily. All rights reserved.</p>
+            <p>Created by Anthony N. Hein</p>
             </div>
         </footer>
         
@@ -184,6 +206,7 @@
         <script src="resources/js/bio-hover-script.js"></script>
         <script src="resources/js/show-family-script.js"></script>
         <script src="resources/js/scroll-script.js"></script>
+        <script src="resources/js/generate-honorable-hein-script.js"></script>
     </body>
     
 </html>
