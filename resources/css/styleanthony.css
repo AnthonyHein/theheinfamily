@@ -33,10 +33,67 @@ body {
 /* HEADER */
 /* ----------------------------------------------- */
 
+header {
+    background-color: #1e2a45;
+}
+
 .flashlight {
     cursor: url('img/flashlight.png'), auto;
 }
 
+header p {
+    padding-top: 20px;
+    color: #f8f8f8;
+}
+
+.name {
+    padding-bottom: 50px;
+}
+
+header span {
+    color: #1e2a45;
+    transition: color 30s;
+}
+
+header span:hover {
+    color: #f8f8f8;
+    transition: color 0.3s;
+}
+
+/* ----------------------------------------------- */
+/* INDIANA-JONES */
+/* ----------------------------------------------- */
+
+.indiana-jones {
+    background-color: #FFF;
+}
+
+.letter-platform {
+    background-color: #45391E;
+    color: #FFF;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.letter-platform.correct {
+    cursor: url('img/shoe-prints.png'), pointer;
+}
+
+.letter-platform.incorrect {
+    cursor: url('img/skull-crossbones.png'), pointer;
+}
+
+
+/* ----------------------------------------------- */
+/* SYNOPSIS */
+/* ----------------------------------------------- */
+
+.synopsis {
+    background-color: #FFF;
+}
 
 
 /* ----------------------------------------------- */
@@ -67,9 +124,9 @@ h4 {
 h1 {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 5px;
-    margin-left: 5px;
-    color: #fff;
+    margin-right: 3px;
+    margin-left: 3px;
+    color: #1e2a45;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -79,7 +136,7 @@ h1 {
 
 h1:hover {
     transition: color 0.3s;
-    color: #1e2a45;
+    color: #f8f8f8;
 }
 
 
