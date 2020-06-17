@@ -11,7 +11,7 @@
 html,
 body {
     background-color: #fff;
-    color: #1e2a45;
+    color: #1E2A45;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -61,7 +61,7 @@ header {
 /* ----------------------------------------------- */
 
 .squad {
-    background-color: #f8f8f8;
+    background-color: #F8F8F8;
 }
 
 .black-bg {
@@ -75,12 +75,12 @@ header {
 }
 
 .squad img {
-    opacity: 0.7;
+    opacity: 1;
     transition: opacity 0.5s;
 }
 
 .squad img:hover {
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .member {
@@ -93,18 +93,18 @@ header {
 /* ----------------------------------------------- */
 
 .dog {
-    background-color: #1e2a45;
-    color: #f8f8f8;
+    background-color: #1E2A45;
+    color: #F8F8F8;
 }
 
 .dog h2 {
-    color: #f8f8f8;
+    color: #F8F8F8;
 }
 
 .dog h2:after {
     display: block;
     height: 2px;
-    background-color: #9f9f9f;
+    background-color: #9F9F9F;
     content: " ";
     width: 200px;
     margin: 0 auto;
@@ -121,7 +121,7 @@ header {
 /* ----------------------------------------------- */
 
 .extended-family {
-    background-color: #f8f8f8;
+    background-color: #F8F8F8;
 }
 
 .extended-family #show-more-family {
@@ -145,14 +145,14 @@ header {
 /* ----------------------------------------------- */
 
 .honorable-hein {
-    background-color: #1e2a45;
-    color: #f8f8f8;
+    background-color: #1E2A45;
+    color: #F8F8F8;
 }
 
 .honorable-hein h2:after {
     display: block;
     height: 2px;
-    background-color: #9f9f9f;
+    background-color: #9F9F9F;
     content: " ";
     width: 200px;
     margin: 0 auto;
@@ -166,8 +166,8 @@ header {
     padding: 8px;
     font-weight: 200;
     margin-bottom: 50px;
-    background-color: #f8f8f8;
-    color: #1e2a45;
+    background-color: #F8F8F8;
+    color: #1E2A45;
 }
 
 .honorable-hein-entry {
@@ -178,7 +178,7 @@ header {
 }
 
 .honorable-hein-entry a {
-    color: #bed3ff;
+    color: #BED3FF;
 }
 
 
@@ -187,7 +187,7 @@ header {
 /* ----------------------------------------------- */
 
 .contact-form {
-    background-color: #f8f8f8;
+    background-color: #F8F8F8;
 }
 
 .reset-btn {
@@ -204,8 +204,8 @@ header {
 /* ----------------------------------------------- */
 
 footer {
-    background-color: #1e2a45;
-    color: #f8f8f8;
+    background-color: #1E2A45;
+    color: #F8F8F8;
     font-size: 70%;
     text-align: right;
 }
@@ -227,7 +227,7 @@ h4 {
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
+    color: #FFF;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -260,7 +260,7 @@ h2:after {
 
 .button.is-rounded.is-info:hover,
 .button.is-rounded.is-info:active {
-    background-color: #0085dd;
+    background-color: #0085DD;
 }
 
 /* ----- LINKS ----- */
@@ -271,9 +271,9 @@ a {
 
 /* ----- FORM CONTROL ----- */
 textarea {
-    color: #1e2a45;
+    color: #1E2A45;
 }
 
 .label {
-    color: #1e2a45;
+    color: #1E2A45;
 }
