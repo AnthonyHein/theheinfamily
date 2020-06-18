@@ -72,6 +72,32 @@ header span:hover {
 
 
 /* ----------------------------------------------- */
+/* MOUSE-MANIA */
+/* ----------------------------------------------- */
+
+.mouse-mania {
+    background-color: #F8F8F8;
+}
+
+.goal-mouse {
+    cursor: pointer;
+    color: #1E2A45;
+    border: 1px solid #F8F8F8;
+    padding: 5px;
+    transform: scale(1.5);
+}
+
+.goal-mouse:hover {
+    color: #F8F8F8;
+}
+
+#mouse-mania-won {
+    color: #27AE60;
+    font-size: 240%;
+}
+
+
+/* ----------------------------------------------- */
 /* INDIANA-JONES */
 /* ----------------------------------------------- */
 
