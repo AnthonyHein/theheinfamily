@@ -163,6 +163,25 @@ header span:hover {
 
 .languages {
     background-color: #1E2A45;
+    color: #F8F8F8;
+}
+
+.languages h2 {
+    color: #F8F8F8;
+}
+
+.languages h2:after {
+    display: block;
+    height: 2px;
+    background-color: #9F9F9F;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.inappropriate {
+    display: none;
 }
 
 
