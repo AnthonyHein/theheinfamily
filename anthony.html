@@ -130,13 +130,23 @@
             </div>
         </section>
         
+        <section class="section education">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-left">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section class="section languages">
             <div class="container">
                 <h2>Programming Languages</h2>
                 <div class="columns is-mobile is-centered">
-                    <div class="column is-8 has-text-left">
+                    <div class="column is-6 has-text-left">
                         <div class="content">
-                            This is a complete list of all programming languages I have familiarity with.
+                            <p>A list of all languages I am familiar with:</p>
                             <ul class="ul has-text-left">
                                 <li class="li">
                                     Python
@@ -160,7 +170,7 @@
                                     CSS
                                 </li>
                                 <li class="li">
-                                    LaTeX
+                                    R
                                 </li>
                                 <li class="li">
                                     Go / Golang
@@ -171,14 +181,12 @@
                                 <li class="li">
                                     Verilog
                                 </li>
-                                <div class="inappropriate">
-                                    <li class="li">
-                                        Brainf**k
-                                    </li>
-                                    <li class="li">
-                                        ArnoldC
-                                    </li>
-                                </div>
+                                <li class="inappropriate inappropriate-1">
+                                    &nbsp;
+                                </li>
+                                <li class="inappropriate inappropriate-2">
+                                    &nbsp;
+                                </li>
                             </ul>
                             <div class="inappropriate-prompt">
                                 <i class="fas fa-lock"></i>&nbsp;&nbsp;
@@ -186,13 +194,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="column is-6 has-text-centered">
+                        <div id="chart" style="width: auto; height: 75%;"></div>
+                        <i class="fas fa-chevron-left clickthrough" id="chart-left"></i>&nbsp;&nbsp;
+                        <i class="fas fa-chevron-right clickthrough" id="chart-right"></i>
+                    </div>
                 </div>
             </div>
             <p class="has-text-right">
                 <i class="fas fa-mouse-pointer goal-mouse"></i>
             </p>
         </section>
+                
+        <section class="section education">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-left">
+                    </div>
+                </div>
+            </div>
+        </section>
         
+                
         <div id="mouse-mania-div">
             <section class="section mouse-mania">
                 <div class="container">
@@ -393,6 +417,8 @@
         <script src="resources/js/show-inappropriate-script.js"></script>
         <script src="vendors/js/p5.min.js"></script>
         <script src="resources/js/mouse-mania-script.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="resources/js/programming-language-script.js"></script>
     </body>
     
 </html>

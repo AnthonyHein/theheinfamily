@@ -81,14 +81,14 @@ header span:hover {
 
 .goal-mouse {
     cursor: pointer;
-    color: #1E2A45;
-    border: 1px solid #F8F8F8;
+    color: #FFF;
+    border: 1px solid #1E2A45;
     padding: 5px;
     transform: scale(1.5);
 }
 
 .goal-mouse:hover {
-    color: #F8F8F8;
+    color: #1E2A45;
 }
 
 #mouse-mania-won {
@@ -181,22 +181,20 @@ header span:hover {
     display: none;
 }
 
-
-
 /* ----------------------------------------------- */
-/* LANGUAGES */
+/* EDUCATION */
 /* ----------------------------------------------- */
 
-.languages {
+.education {
     background-color: #1E2A45;
     color: #F8F8F8;
 }
 
-.languages h2 {
+.education h2 {
     color: #F8F8F8;
 }
 
-.languages h2:after {
+.education h2:after {
     display: block;
     height: 2px;
     background-color: #9F9F9F;
@@ -206,10 +204,27 @@ header span:hover {
     margin-top: 30px;
 }
 
-.inappropriate {
-    display: none;
+/* ----------------------------------------------- */
+/* LANGUAGES */
+/* ----------------------------------------------- */
+
+.languages {
+    background-color: #FFF;
+    color: #1E2A45;
 }
 
+.inappropriate {
+    list-style: none;
+}
+
+
+.clickthrough {
+    color: #0099FF;
+    border: 1px solid #0099FF;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* ----------------------------------------------- */
 /* FOOTER */
