@@ -7,7 +7,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="vendors/css/all.min.css">
         
-        <title>Anthony Hein</title>
+        <title>Nicholas Hein</title>
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/pardon.css">
@@ -31,6 +31,26 @@
             </div>
         </header>
         
+        <section>
+            <div class="container">
+                <div class="content">
+                    <h2>Happy Birthday Nicholas</h2>
+                    <form onsubmit="return checkPassword();">
+                        <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" id="name" name="name" placeholder="e.g. Up,Down,Left,Right or Up,Up,Right,Left">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <span id="directions"></span>
+                </div>
+            </div>
+        </section>
+        
         
 
         <footer>
@@ -38,6 +58,16 @@
                 <p>Created by Anthony N. Hein</p>
             </div>
         </footer>
+        
+        <script>
+            function checkPassword() {
+                if (document.getElementById('name').value == "Up,Left,Right,Down,Down,Down,Up,Up,Left")
+                {
+                    document.getElementById('directions').textContent = "Cabinet in dad's desk to top-left of monitor.";
+                }
+                return false;
+            }
+        </script>
 
     </body>
     

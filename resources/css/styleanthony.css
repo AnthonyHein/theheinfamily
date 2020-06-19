@@ -204,6 +204,36 @@ header span:hover {
     margin-top: 30px;
 }
 
+.education p {
+    line-height: 1.8;
+}
+
+.princeton {
+    color: #FF8F00;
+}
+
+.princeton-desc a {
+    color: #FFC57C;
+}
+
+.princeton-desc a:hover {
+    color: #F89820;
+}
+
+.jfk {
+    color: #00D632;
+}
+
+.jfk-desc a {
+    color: #89F5A2;
+}
+
+.jfk-desc a:hover {
+    color: #0eb936;
+}
+
+
+
 /* ----------------------------------------------- */
 /* LANGUAGES */
 /* ----------------------------------------------- */
@@ -286,6 +316,13 @@ h2:after {
     width: 200px;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+h3 {
+    font-size: 130%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px; 
 }
 
 .button.is-rounded.is-info:link,
