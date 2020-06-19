@@ -4,15 +4,7 @@ $(document).ready(function() {
     $("#KR-Div").hover(function(){
         $("#KR").show();
         $("#KR-Pic").fadeTo(300, 0.05);
-        $("#work-exp-box").html(`<ul class="ul">
-                                    <li class="li">
-                                        Streamlined and modernized an Air Force web application called GeoLibrarian which disseminates geospatial data using <b>Node.js</b>
-                                    </li>
-                                    <li class="li">
-                                        Adapted to the use of outdated modules to conform to Air Force security protocols.
-                                    </li>
-                                </ul>
-                                <b>More information will be added here as the internship progresses.</b>`);
+        $("#work-exp-box").html(`<b>More information will be added here as the internship progresses.</b>`);
         }, function() {
         $("#KR").hide();
         $("#KR-Pic").fadeTo(300, 1);
