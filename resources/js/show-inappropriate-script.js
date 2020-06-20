@@ -1,9 +1,9 @@
 function showInappropriate() {
     $('.inappropriate').css('list-style', 'disc');
-    $('.inappropriate-1').html('Brainf**k');
-    $('.inappropriate-2').html('ArnoldC');
+    $('.inappropriate-1').html('Brainf**k&nbsp;&nbsp;<i class="fas fa-brain"></i>');
+    $('.inappropriate-2').html('ArnoldC&nbsp;&nbsp;<i class="fas fa-robot"></i>');
     $('.inappropriate-prompt').html(    `<i class="fas fa-lock-open"></i>&nbsp;&nbsp;
-                                        <b>(2)</b> entries that may contain inappropriate/unprofessional content are currently showing. Click <button onclick="hideInappropriate();">here</button> to hide this content.`);
+                                        <b>(2)</b> entries have been hidden because they may contain inappropriate/unprofessional content. Click <a href="javascript:hideInappropriate();">here</a> to show this content.   `);
 }
 
 function hideInappropriate() {
@@ -11,5 +11,5 @@ function hideInappropriate() {
     $('.inappropriate-1').html(`&nbsp;`);
     $('.inappropriate-2').html(`&nbsp;`);
     $('.inappropriate-prompt').html(    `<i class="fas fa-lock"></i>&nbsp;&nbsp;
-                                        <b>(2)</b> entries have been hidden because they may contain inappropriate/unprofessional content. Click <button onclick="showInappropriate();">here</button> to show this content.`);
+                                        <b>(2)</b> entries have been hidden because they may contain inappropriate/unprofessional content. Click <a href="javascript:showInappropriate();">here</a> to show this content.`);
 }

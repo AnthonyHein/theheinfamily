@@ -101,8 +101,7 @@ function drawChart3() {
     ]);
     
     var options = {
-        title: '# of Projects Using Language',
-        subtitle: '(A project is 300+ lines of code)',
+        title: '# of Projects Using Language (All Time)',
         titleTextStyle: {
             color: '#1E2A45'
         },

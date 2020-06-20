@@ -9,8 +9,10 @@
         
         <title>Anthony Hein</title>
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <link rel="stylesheet" href="vendors/css/bulma.min.css">
+        <link rel="stylesheet" href="vendors/css/bulma-tooltip.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/styleanthony.css">
+        <link rel="shortcut icon" href="resources/img/PWPicture.JPG" type="image/x-icon">
     </head>
 
     <body>
@@ -54,11 +56,16 @@
                     </div>
                     <div class="column is-9 has-text-justified">
                         <div class="content">
-                            My name is Anthony Hein and I am a student pursuing a <b>B.S.</b> in <b>computer science</b> at <b>Princeton University</b> with a certificate in <b>statistics and machine learning</b>. I am undecided in how I would like to leverage my knowledge and open to a breadth of different opportunities.
+                            Proud lefty, duodecimal advocate, ordained minister, and riddle master with a refuse-to-lose attitude inspired by the two-time failure of my driver's test.
                             <br><br>
-                            As an aside, I like to live by the saying <a href="https://www.youtube.com/watch?v=qybUFnY7Y8w" target="_blank">"This too shall pass"</a> -- one of the only sayings that can make a happy person sad and a sad person happy. 
+                            I am a student studying <b>computer science</b> at Princeton University and working towards a certificate in <b>statistics and machine learning</b>. Outside of class, I am the treasurer of the Princeton PUZZLES club and Princeton Guitar Club. My professionalism has been cultivated through work with Pratt & Whitney, the U.S. Air Force Civilian Service, and Kessel Run (this is real, not just a Star Wars reference). On the side, I pursue several personal projects primarily using Python.
                             <br><br>
-                            P.S. This page is dotted with CSS minigames because... why not.
+                            I like to live by the saying <a href="https://www.youtube.com/watch?v=qybUFnY7Y8w" target="_blank">"This too shall pass"</a> -- one of the only sayings that can make a happy person sad and a sad person happy. 
+                            <br><br>
+                        </div>
+                        <div class="has-text-right">
+                            <a href="resources/downloads/Resume.pdf" class="button is-info" target="_blank"><i class="fas fa-file"></i>&nbsp;Resume</a>
+                            <a href="resources/downloads/Transcript.pdf" class="button is-secondary" target="_blank"><i class="fas fa-file"></i>&nbsp;Transcript</a>
                         </div>
                     </div>
                 </div>
@@ -165,6 +172,29 @@
                 </div>
             </div>
         </section>
+
+        
+        <section class="section riddle">
+            <div class="container">
+                <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
+                <p class="has-text-centered">I lied... this is actually a riddle, not a game.</p>
+                <p class="has-text-centered">Where does T > 3, 10 > 3, S > 10 (sometimes), and T > 10?</p>
+                <br>
+                <form onsubmit="event.preventDefault(); checkAnswer();">
+                    <div class="field">
+                        <div class="control has-icons-left" style="width:75%;">
+                            <input class="input" type="text" id="riddle-answer" name="name" placeholder="Hmm..... think of different ways to verbally interpret the 'greater than' symbol.">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-question"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" class="button is-info is-outlined submit-btn">Check Answer</button>
+                </form>
+                <br>
+                <p><span id="riddle-won">&nbsp;</span></p>
+            </div>
+        </section>
         
         <section class="section languages">
             <div class="container">
@@ -172,40 +202,40 @@
                 <div class="columns is-mobile is-centered">
                     <div class="column is-6 has-text-left">
                         <div class="content">
-                            <p>A list of all languages I am familiar with:</p>
+                            <p>In order of descending familiarity:</p>
                             <ul class="ul has-text-left">
                                 <li class="li">
-                                    Python
+                                    Python&nbsp;&nbsp;<i class="fab fa-python"></i>
                                 </li>
                                 <li class="li">
-                                    Java
+                                    Java&nbsp;&nbsp;<i class="fab fa-java"></i>
                                 </li>
                                 <li class="li">
-                                    C
+                                    C&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>
                                 </li>
                                 <li class="li">
-                                    SQL
+                                    Javascript&nbsp;&nbsp;<i class="fab fa-js"></i>
                                 </li>
                                 <li class="li">
-                                    Javascript
+                                    HTML&nbsp;&nbsp;<i class="fab fa-html5"></i>
                                 </li>
                                 <li class="li">
-                                    HTML
+                                    CSS&nbsp;&nbsp;<i class="fab fa-css3-alt"></i>
                                 </li>
                                 <li class="li">
-                                    CSS
+                                    SQL&nbsp;&nbsp;<i class="fas fa-database"></i>
                                 </li>
                                 <li class="li">
-                                    R
+                                    R&nbsp;&nbsp;<i class="fab fa-r-project"></i>
                                 </li>
                                 <li class="li">
-                                    Go / Golang
+                                    Go / Golang&nbsp;&nbsp;<i class="fab fa-google"></i>
                                 </li>
                                 <li class="li">
-                                    ARMv8
+                                    ARMv8&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>
                                 </li>
                                 <li class="li">
-                                    Verilog
+                                    Verilog&nbsp;&nbsp;<i class="fas fa-microchip"></i>
                                 </li>
                                 <li class="inappropriate inappropriate-1">
                                     &nbsp;
@@ -216,14 +246,15 @@
                             </ul>
                             <div class="inappropriate-prompt">
                                 <i class="fas fa-lock"></i>&nbsp;&nbsp;
-                                <b>(2)</b> entries have been hidden because they may contain inappropriate/unprofessional content. Click <button onclick="showInappropriate();">here</button> to show this content.                                
+                                <b>(2)</b> entries have been hidden because they may contain inappropriate/unprofessional content. Click <a href="javascript:showInappropriate();">here</a> to show this content.                                
                             </div>
                         </div>
                     </div>
                     <div class="column is-6 has-text-centered">
                         <div id="chart" style="width: auto; height: 75%;"></div>
-                        <i class="fas fa-chevron-left clickthrough" id="chart-left"></i>&nbsp;&nbsp;
-                        <i class="fas fa-chevron-right clickthrough" id="chart-right"></i>
+                        <br>
+                        <span class="clickthrough" id="chart-left"><i class="fas fa-chevron-left"></i>&nbsp;Prev</span>&nbsp;&nbsp;
+                        <span class="clickthrough" id="chart-right">Next&nbsp;<i class="fas fa-chevron-right"></i></span>
                     </div>
                 </div>
             </div>
@@ -232,11 +263,27 @@
             </p>
         </section>
                 
-        <section class="section education">
+        <section class="section contact-me">
             <div class="container">
-                <h2>Follow Me</h2>
+                <h2>Stay in Touch</h2>
                 <div class="columns is-mobile is-centered">
-                    <div class="column is-8 has-text-left">
+                    <div class="column is-8 has-text-centered">
+                        <p>In descending order of use:</p>
+                        <br>
+                        <a class="social-media-link" href="mailto:anhein@princeton.edu" id="social-media-mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                        &nbsp;
+                        <span class="social-media-link has-tooltip-bottom" id="social-media-phone" data-tooltip="732-977-4104"><i class="fas fa-phone"></i></span>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-github" href="https://github.com/AnthonyHein" target="_blank"><i class="fab fa-github"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-instagram" href="https://www.instagram.com/ant_hein57/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-linkedin" href="https://www.linkedin.com/in/anthein57/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-facebook" href="https://www.facebook.com/anthony.hein.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-twitter" href="https://twitter.com/AntHein57" target="_blank"><i class="fab fa-twitter"></i></a>
+                        
                     </div>
                 </div>
             </div>
@@ -355,6 +402,8 @@
             <div class="container">
                 <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
                 <p class="has-text-centered">
+                    If you see the skull and crossbones, you lose!
+                    <br>
                     The Name of God...
                     <span class="icon is-left">
                         <i class="fas fa-hiking"></i>
@@ -431,6 +480,7 @@
         <footer>
             <div class="content">
                 <p>Created by Anthony N. Hein</p>
+                <p>Last updated June 2020.</p>
                 <p>Visit my family's site <a href="/">here</a>.</p>
                 <div>
                     Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
@@ -445,6 +495,7 @@
         <script src="resources/js/mouse-mania-script.js"></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="resources/js/programming-language-script.js"></script>
+        <script type="text/javascript" src="resources/js/riddle-script.js"></script>
     </body>
     
 </html>

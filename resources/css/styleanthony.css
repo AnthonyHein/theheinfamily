@@ -70,6 +70,18 @@ header span:hover {
 }
 
 
+/* ----------------------------------------------- */
+/* RIDDLE */
+/* ----------------------------------------------- */
+
+.riddle {
+    background-color: #F8F8F8;
+}
+
+#riddle-won {
+    color: #27AE60;
+    font-size: 120%;
+}
 
 /* ----------------------------------------------- */
 /* MOUSE-MANIA */
@@ -230,6 +242,61 @@ header span:hover {
 
 .jfk-desc a:hover {
     color: #0eb936;
+}
+
+/* ----------------------------------------------- */
+/* CONTACT-ME */
+/* ----------------------------------------------- */
+
+.contact-me {
+    background-color: #1E2A45;
+    color: #F8F8F8;
+}
+
+.contact-me h2 {
+    color: #F8F8F8;
+}
+
+.contact-me h2:after {
+    display: block;
+    height: 2px;
+    background-color: #9F9F9F;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.social-media-link {
+    color: #F8F8F8;
+}
+
+#social-media-mail:hover {
+    color: #FF8F00;
+}
+
+#social-media-phone:hover {
+    color: #3DDC84;
+}
+
+#social-media-github:hover {
+    color: #AD5C51;
+}
+
+#social-media-instagram:hover {
+    color: #3F729B;
+}
+
+#social-media-facebook:hover {
+    color: #3B5998;
+}
+
+#social-media-linkedin:hover {
+    color: #0072B1;
+}
+
+#social-media-twitter:hover {
+    color: #38A1F3;
 }
 
 
