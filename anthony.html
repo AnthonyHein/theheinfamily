@@ -17,9 +17,27 @@
 
     <body>
         <header>
-            <nav>
+            <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <div class="navbar-item">
+                        <img src="resources/img/PWPicture.JPG" width="28" height="28" class="small-profile-pic">&nbsp;&nbsp;Anthony Hein
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <button class="button nav-button" href="#intro" id="intro-btn">Intro</button>
+                            <button class="button nav-button" href="#work" id="work-btn">Work</button>
+                            <button class="button nav-button" href="#education" id="education-btn">Education</button>
+                            <button class="button nav-button" href="#languages" id="languages-btn">Languages</button>
+                            <button class="button nav-button" href="#contact" id="contact-btn">Contact</button>
+                            <button class="button nav-button" href="#extra" id="extra-btn">Extra</button>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <div class="container flashlight name">
+            <div class="container flashlight name" id="#flashlight-section">
                 <div class="columns is-mobile is-centered">
                     <div class="column is-8 has-text-centered">
                         <p>Hello stranger, don't brave these dark halls without a flashlight...</p>
@@ -45,7 +63,7 @@
             </div>
         </header>
         
-        <section class="section intro">
+        <section class="section intro" id="intro">
             <div class="container">
                 <h2>Introduction</h2>
                 <div class="columns is-mobile is-centered is-vcentered">
@@ -72,7 +90,7 @@
             </div>
         </section>
         
-        <section class="section work-exp">
+        <section class="section work-exp" id="work">
             <div class="container">
                 <h2>Work Experience&nbsp;&nbsp;<i class="fas fa-briefcase"></i></h2>
                 <p class="has-text-centered">
@@ -137,7 +155,7 @@
             </div>
         </section>
         
-        <section class="section education">
+        <section class="section education" id="education">
             <div class="container">
                 <h2>Education&nbsp;&nbsp;<i class="fas fa-graduation-cap"></i></h2>
                 <div class="columns is-mobile is-centered">
@@ -196,7 +214,7 @@
             </div>
         </section>
         
-        <section class="section languages">
+        <section class="section languages" id="languages">
             <div class="container">
                 <h2>Programming Languages&nbsp;&nbsp;<i class="fas fa-code"></i></h2>
                 <div class="columns is-mobile is-centered">
@@ -263,7 +281,7 @@
             </p>
         </section>
                 
-        <section class="section contact-me">
+        <section class="section contact-me" id="contact">
             <div class="container">
                 <h2>Stay in Touch</h2>
                 <div class="columns is-mobile is-centered">
@@ -291,7 +309,7 @@
         
                 
         <div id="mouse-mania-div">
-            <section class="section mouse-mania">
+            <section class="section mouse-mania" id="extra">
                 <div class="container">
                     <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
                     <p class="has-text-centered">Click the mouse pointer that is slightly larger than the others.</p>
@@ -496,6 +514,7 @@
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="resources/js/programming-language-script.js"></script>
         <script type="text/javascript" src="resources/js/riddle-script.js"></script>
+        <script type="text/javascript" src="resources/js/navbar-script.js"></script>
     </body>
     
 </html>
