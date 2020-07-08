@@ -31,6 +31,7 @@
                             <button class="button nav-button" href="#work" id="work-btn">Work</button>
                             <button class="button nav-button" href="#education" id="education-btn">Education</button>
                             <button class="button nav-button" href="#languages" id="languages-btn">Languages</button>
+                            <button class="button nav-button" href="#projects" id="projects-btn">Projects</button>
                             <button class="button nav-button" href="#contact" id="contact-btn">Contact</button>
                             <button class="button nav-button" href="#extra" id="extra-btn">Extra</button>
                         </div>
@@ -80,6 +81,7 @@
                             <br><br>
                             I like to live by the saying <a href="https://www.youtube.com/watch?v=qybUFnY7Y8w" target="_blank">"This too shall pass"</a> -- one of the only sayings that can make a happy person sad and a sad person happy. 
                             <br><br>
+                            Also, this page has minigames, like the one below.
                         </div>
                         <div class="has-text-right">
                             <a href="resources/downloads/Resume.pdf" class="button is-info" target="_blank"><i class="fas fa-file"></i>&nbsp;Resume</a>
@@ -89,6 +91,17 @@
                 </div>
             </div>
         </section>
+        
+        <div id="mouse-mania-div">
+            <section class="section mouse-mania" id="extra">
+                <div class="container">
+                    <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
+                    <p class="has-text-centered">Click the mouse pointer that is slightly larger than the others.</p>
+                    <br>
+                    <p class="has-text-centered"><span id="mouse-mania-won"></span></p>
+                </div>
+            </section>
+        </div>
         
         <section class="section work-exp" id="work">
             <div class="container">
@@ -190,232 +203,7 @@
                 </div>
             </div>
         </section>
-
-        
-        <section class="section riddle">
-            <div class="container">
-                <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
-                <p class="has-text-centered">I lied... this is actually a riddle, not a game.</p>
-                <p class="has-text-centered">Where does T > 3, 10 > 3, S > 10 (sometimes), and T > 10?</p>
-                <br>
-                <form onsubmit="event.preventDefault(); checkAnswer();">
-                    <div class="field">
-                        <div class="control has-icons-left" style="width:75%;">
-                            <input class="input" type="text" id="riddle-answer" name="name" placeholder="Hmm..... think of different ways to verbally interpret the 'greater than' symbol.">
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-question"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <button type="submit" name="submit" class="button is-info is-outlined submit-btn">Check Answer</button>
-                </form>
-                <br>
-                <p><span id="riddle-won">&nbsp;</span></p>
-            </div>
-        </section>
-        
-        <section class="section languages" id="languages">
-            <div class="container">
-                <h2>Programming Languages&nbsp;&nbsp;<i class="fas fa-code"></i></h2>
-                <div class="columns is-mobile is-centered">
-                    <div class="column is-6 has-text-left">
-                        <div class="content">
-                            <p>In order of descending familiarity:</p>
-                            <ul class="ul has-text-left">
-                                <li class="li">
-                                    Python&nbsp;&nbsp;<i class="fab fa-python"></i>
-                                </li>
-                                <li class="li">
-                                    Java&nbsp;&nbsp;<i class="fab fa-java"></i>
-                                </li>
-                                <li class="li">
-                                    C&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>
-                                </li>
-                                <li class="li">
-                                    Javascript&nbsp;&nbsp;<i class="fab fa-js"></i>
-                                </li>
-                                <li class="li">
-                                    HTML&nbsp;&nbsp;<i class="fab fa-html5"></i>
-                                </li>
-                                <li class="li">
-                                    CSS&nbsp;&nbsp;<i class="fab fa-css3-alt"></i>
-                                </li>
-                                <li class="li">
-                                    SQL&nbsp;&nbsp;<i class="fas fa-database"></i>
-                                </li>
-                                <li class="li">
-                                    R&nbsp;&nbsp;<i class="fab fa-r-project"></i>
-                                </li>
-                                <li class="li">
-                                    Go / Golang&nbsp;&nbsp;<i class="fab fa-google"></i>
-                                </li>
-                                <li class="li">
-                                    ARMv8&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>
-                                </li>
-                                <li class="li">
-                                    Verilog&nbsp;&nbsp;<i class="fas fa-microchip"></i>
-                                </li>
-                                <li class="inappropriate inappropriate-1">
-                                    &nbsp;
-                                </li>
-                                <li class="inappropriate inappropriate-2">
-                                    &nbsp;
-                                </li>
-                            </ul>
-                            <div class="inappropriate-prompt">
-                                <i class="fas fa-lock"></i>&nbsp;&nbsp;
-                                <b>(2)</b> entries have been hidden because they may contain inappropriate/unprofessional content. Click <a href="javascript:showInappropriate();">here</a> to show this content.                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-6 has-text-centered">
-                        <div id="chart" style="width: auto; height: 75%;"></div>
-                        <br>
-                        <span class="clickthrough" id="chart-left"><i class="fas fa-chevron-left"></i>&nbsp;Prev</span>&nbsp;&nbsp;
-                        <span class="clickthrough" id="chart-right">Next&nbsp;<i class="fas fa-chevron-right"></i></span>
-                    </div>
-                </div>
-            </div>
-            <p class="has-text-right">
-                <i class="fas fa-mouse-pointer goal-mouse"></i>
-            </p>
-        </section>
                 
-        <section class="section contact-me" id="contact">
-            <div class="container">
-                <h2>Stay in Touch</h2>
-                <div class="columns is-mobile is-centered">
-                    <div class="column is-8 has-text-centered">
-                        <p>In descending order of use:</p>
-                        <br>
-                        <a class="social-media-link" href="mailto:anhein@princeton.edu" id="social-media-mail" target="_blank"><i class="fas fa-envelope"></i></a>
-                        &nbsp;
-                        <span class="social-media-link has-tooltip-bottom" id="social-media-phone" data-tooltip="732-977-4104"><i class="fas fa-phone"></i></span>
-                        &nbsp;
-                        <a class="social-media-link" id="social-media-github" href="https://github.com/AnthonyHein" target="_blank"><i class="fab fa-github"></i></a>
-                        &nbsp;
-                        <a class="social-media-link" id="social-media-instagram" href="https://www.instagram.com/ant_hein57/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                        &nbsp;
-                        <a class="social-media-link" id="social-media-linkedin" href="https://www.linkedin.com/in/anthein57/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        &nbsp;
-                        <a class="social-media-link" id="social-media-facebook" href="https://www.facebook.com/anthony.hein.5" target="_blank"><i class="fab fa-facebook"></i></a>
-                        &nbsp;
-                        <a class="social-media-link" id="social-media-twitter" href="https://twitter.com/AntHein57" target="_blank"><i class="fab fa-twitter"></i></a>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-                
-        <div id="mouse-mania-div">
-            <section class="section mouse-mania" id="extra">
-                <div class="container">
-                    <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
-                    <p class="has-text-centered">Click the mouse pointer that is slightly larger than the others.</p>
-                    <br>
-                    <p class="has-text-centered"><span id="mouse-mania-won"></span></p>
-                </div>
-            </section>
-        </div>
-        
-        <section class="section fun-facts">
-            <div class="container">
-                <h2>Fun Facts, Skills, and Memberships</h2>
-                <div class="columns is-mobile is-centered">
-                    <div class="column is-8 has-text-left">
-                        <div class="content">
-                            Fun Facts -- Did you know?
-                            <ul class="ul">
-                                <li class="li">I drive a decommissioned sheriff's car (need an electrician to get the sirens working).</li>
-                                <li class="li">I am the 49th best player in the world for the mobile game Pew Pew 2 in Pacifism mode.</li>
-                                <li class="li">I plan to name my kid Seven Eight Hein.</li>
-                                <li class="li">I have achieved every star on COD: MW 2 Special Ops (special thanks to <a href="michael.html" target="_blank">Michael</a>).</li>
-                                <li class="li">Without realizing who she was, I asked <a href="https://en.wikipedia.org/wiki/Chloe_Kim" target="_blank">Chloe Kim</a> if she brought a horse to campus.</li>
-                                <li class="li">I went blind for 5 minutes in 2017.</li>
-                                <li class="li">I am 25% Chinese, but my Chinese grandmother was adopted and raised by Italians.</li>
-                            </ul>
-                            Fun Skills -- I can...
-                            <ul class="ul">
-                                <li class="li">solve a Rubik's Cube (45.67 PR)</li>
-                                <li class="li">run a 5K (18:49 PR)</li>
-                                <li class="li">spin pizza dough</li>
-                                <li class="li">play the tenor saxophone</li>
-                                <li class="li">perform magic tricks</li>
-                                <li class="li">recite the cube root of any perfect cube less than 1,000,000</li>
-                                <li class="li">throw a playing card into a foam board</li>
-                                <li class="li">construct stick bombs (<a href="https://www.youtube.com/watch?v=GtnZc1dujgg" target="_blank">check out this one, not mine</a>)</li>
-                                <li class="li"><a href="https://drive.google.com/file/d/1-978-ni3PvmqjzQsQhjpVQb5aABcWuVe/view?usp=sharing" target="_blank">moonwalk</a>, <a href="https://drive.google.com/file/d/1-EXpAxTYKh_2SaeEpuXKudMw7y_WOPlx/view?usp=sharing" target="_blank">backward worm</a>, <a href="https://drive.google.com/file/d/1-8rP3JHuS-pWZTJg5hUxheQZd232C0Pm/view?usp=sharing" target="_blank">flip</a>, and c-walk</li>
-                            </ul>
-                            Fun Memberships -- I am a...
-                            <ul class="ul">
-                                <li class="li">
-                                    <a href="https://www.lefthandersday.com/" target="_blank">Left Handers Club Member</a>
-                                </li>
-                                <li class="li">
-                                    <a href="http://dozenal.org/" target="_blank">Dozenal Society of America Member</a>
-                                </li>
-                                <li class="li">
-                                    <a href="http://www.christianglobaloutreach.org/" target="_blank">Christian Global Outreach Ordained Minister</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section sandwiches">
-            <div class="container">
-                <h2>~95 Theses Against Sandwich Nomenclature</h2>
-                <div class="columns is-mobile is-centered">
-                    <div class="column is-8 has-text-left">
-                        <p style="text-decoration: underline">
-                            Scenario 1
-                        </p>
-                        <br>
-                        <p>
-                            It is around noon on a gorgeous Sunday. You are outside trying to prove <a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture" target="_blank">Goldbach's conjecture</a> when mom calls you in for lunch. Awaiting you on the kitchen table, in all its blazing glory, is none other than a delightful turkey sandwich.
-                        </p>
-                        <br>
-                        <p style="text-decoration: underline">
-                            Scenario 2
-                        </p>
-                        <br>
-                        <p>
-                            You are abducted by the dictator of the Galactic Confederacy, <a href="https://en.wikipedia.org/wiki/Xenu" target="_blank">Xenu</a>, who reveals his plan to transport you to a volcano in his DC-8-like spacecraft and kill you with a hydrogen bomb. His alien troops start to surround you and press you from all sides very tightly. However, you manage to use your cellphone to call the head of the <a href="https://en.wikipedia.org/wiki/Space_force" target="_blank">Space Force</a> and cry out, "Help! I am trapped in an alien sandwich!". 
-                        </p>
-                        <br>
-                        <p style="text-decoration: underline">
-                            What's going on here?
-                        </p>
-                        <br>
-                        <p>
-                            Now, the problem is that the two ways these scenarios refer to sandwiches is inconsistent. The first scenario refers to a sandwich by its <em>contents</em>, in this case the cold meats. However, the second scenario refers to a sandwich by <em>that which does the job of surrounding</em> the contents or holds it together. Furthermore, this is interesting because flipping the nomenclature in either scenario renders the sentence hopelessly nondescript.
-                            <br><br>
-                            That is, what if your mom had called, "Come get your <em>bread</em> sandwich?". Well, what is in it? Is it something you like? Maybe. Maybe not.
-                            <br><br>
-                            Similarly, what if you used your precious seconds on the phone with the head of the Space Force to plead, "Help! I am trapped in an <em>&lt;insert name&gt;</em> sandwich!". Why should the head of the Space Force be compelled to take action? There is no discernible threat.
-                            <br><br>
-                            Additionally, if the receiving party in either scenario was expecting the other nomenclature, problems may ensue. For example, the Space Force head may interpret this to be that <em>you</em> are doing the sandwiching, if he expects that a sandwich is named by its meat. That is, maybe you are bullying an alien by sandwiching the said alien, in which case, again, the Space Force head would not help, instead maybe he would send PETA, which I would imagine would be marvelously unprepared for the situation.
-                        </p>
-                        <br>
-                        <p style="text-decoration: underline">
-                            What should we do?
-                        </p>
-                        <br>
-                        <p>
-                            It is my proposal that we use "andwich" when we are attempting to describe an object which has a surrounding structure by the contents inside the surroundings, and that we use "sandwich" when we are attempting to describe an object which has a surrounding structure by the surroundings. This nomenclature mimics the definition they achieve and makes it clear in all cases what the object of interest or threat is. Under this convention, we would say, "Thanks for this <em>ham andwich</em> mom!" while the second scenario stays the same.
-                            <br><br>
-                            Don't agree with me? Well, as they say, it's my way, or Xenu's highway.
-                            <br><br>
-                            - Anthony Hein
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <section class="section indiana-jones">
             <div class="container">
                 <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
@@ -495,10 +283,344 @@
             </div>
         </section>
         
+        <section class="section languages" id="languages">
+            <div class="container">
+                <h2>Programming Languages&nbsp;&nbsp;<i class="fas fa-code"></i></h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-6 has-text-left">
+                        <div class="content">
+                            <p>In order of descending familiarity:</p>
+                            <ul class="ul has-text-left">
+                                <li class="li">
+                                    Python&nbsp;&nbsp;<i class="fab fa-python"></i>
+                                </li>
+                                <li class="li">
+                                    Java&nbsp;&nbsp;<i class="fab fa-java"></i>
+                                </li>
+                                <li class="li">
+                                    C&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>
+                                </li>
+                                <li class="li">
+                                    Javascript&nbsp;&nbsp;<i class="fab fa-js"></i>
+                                </li>
+                                <li class="li">
+                                    HTML&nbsp;&nbsp;<i class="fab fa-html5"></i>
+                                </li>
+                                <li class="li">
+                                    CSS&nbsp;&nbsp;<i class="fab fa-css3-alt"></i>
+                                </li>
+                                <li class="li">
+                                    SQL&nbsp;&nbsp;<i class="fas fa-database"></i>
+                                </li>
+                                <li class="li">
+                                    Go / Golang&nbsp;&nbsp;<i class="fab fa-google"></i>
+                                </li>
+                                <li class="li">
+                                    R&nbsp;&nbsp;<i class="fab fa-r-project"></i>
+                                </li>
+                                <li class="li">
+                                    ARMv8&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>
+                                </li>
+                                <li class="li">
+                                    Verilog&nbsp;&nbsp;<i class="fas fa-microchip"></i>
+                                </li>
+                                <li class="inappropriate inappropriate-1">
+                                    &nbsp;
+                                </li>
+                                <li class="inappropriate inappropriate-2">
+                                    &nbsp;
+                                </li>
+                            </ul>
+                            <div class="inappropriate-prompt">
+                                <i class="fas fa-lock"></i>&nbsp;&nbsp;
+                                <b>(2)</b> entries have been hidden because they may contain inappropriate/unprofessional content. Click <a href="javascript:showInappropriate();">here</a> to show this content.                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6 has-text-centered">
+                        <div id="chart" style="width: auto; height: 75%;"></div>
+                        <br>
+                        <span class="clickthrough" id="chart-left"><i class="fas fa-chevron-left"></i>&nbsp;Prev</span>&nbsp;&nbsp;
+                        <span class="clickthrough" id="chart-right">Next&nbsp;<i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+            <p class="has-text-right">
+                <i class="fas fa-mouse-pointer goal-mouse"></i>
+            </p>
+        </section>
+        
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2>Programming Projects&nbsp;&nbsp;<i class="fas fa-terminal"></i></h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-centered" style="margin-bottom: 20px;">
+                        <p>Some projects are showcased here. Feel free to reach out for further discussion. Click the buttons to toggle the projects displayed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered">
+                <div class="column is-8 has-text-centered project__btn">
+                    <button class="button is-info is-inverted is-fullwidth" id="btn-proj1" onclick="showHideProj(1)">Game21</button>
+                </div>
+            </div>
+            <div class="project__container" id="proj1">
+                <figure class="project">
+                    <div class="project__content">
+                        <div class="project__title">
+                            <h3 class="project__heading">Game21</h3>
+                            <div class="project__tag project__tag--golang">GOLANG</div>
+                        </div>
+                        <p class="project__description">
+                            Implements an environment for a simple two-player game and trains an agent to play the game using reinforcement learning. In 1,000,000 games the agent plays the optimal strategy.
+                        </p>
+                        <div class="project__details">
+                            <p class="project__detail"><span class="emoji">💻</span>600 lines</p>
+                            <p class="project__detail"><span class="emoji">💡</span>RL</p>
+                            <p class="project__detail"><span class="emoji">⭐️</span>No 3rd Party code</p>
+                            <p class="project__detail"><span class="emoji">📁</span><a href="https://github.com/AnthonyHein/Game21" target="_blank">GitHub</a></p>
+                        </div>
+                    </div>
+                    <div class="project__banner--golang--golang"></div>
+                </figure>
+            </div>
+            <div class="columns is-mobile is-centered">
+                <div class="column is-8 has-text-centered project__btn">
+                    <button class="button is-info is-inverted is-fullwidth" id="btn-proj2" onclick="showHideProj(2)">APSA Matcher</button>
+                </div>
+            </div>
+            <div class="project__container" id="proj2">
+                <figure class="project">
+                    <div class="project__content">
+                        <div class="project__title">
+                            <h3 class="project__heading">APSA Matcher</h3>
+                            <div class="project__tag project__tag--python">PYTHON</div>
+                            <div class="project__tag project__tag--googleapiconsole">GOOGLE API CONSOLE</div>
+                        </div>
+                        <p class="project__description">
+                            Worked with American Physician Scientists Association (APSA) to develop a Python application to match undergraduate students of underrepresented minorities to principal investigators (PIs) while respecting field and skill preferences for Summer 2020. This program gave over 200 students research opportunities.
+                        </p>
+                        <div class="project__details">
+                            <p class="project__detail"><span class="emoji">💻</span>500 lines</p>
+                            <p class="project__detail"><span class="emoji">👩🏿‍⚕️</span>URM</p>
+                            <p class="project__detail"><span class="emoji">🧬</span>Healthcare</p>
+                            <p class="project__detail"><span class="emoji">📁</span>(private)</p>
+                        </div>
+                    </div>
+                    <div class="project__banner--python--googleapiconsole"></div>
+                </figure>
+            </div>
+
+            <div class="columns is-mobile is-centered">
+                <div class="column is-8 has-text-centered project__btn">
+                    <button class="button is-info is-inverted is-fullwidth" id="btn-proj3" onclick="showHideProj(3)">Lingo Plinko</button>
+                </div>
+            </div>
+            <div class="project__container" id="proj3">
+                <figure class="project">
+                    <div class="project__content">
+                        <div class="project__title">
+                            <h3 class="project__heading">Lingo Plinko</h3>
+                            <div class="project__tag project__tag--javascript">JAVASCRIPT</div>
+                            <div class="project__tag project__tag--mongodb">MONGODB</div>
+                            <div class="project__tag project__tag--heroku">HEROKU</div>
+                            <div class="project__tag project__tag--express">EXPRESS</div>
+                            <div class="project__tag project__tag--pug">PUG</div>
+                        </div>
+                        <p class="project__description">
+                            Created an online word game with JavaScript that can be played virtually in response to the pandemic that I played with my uncle while he was in the hospital. This project was my first exposure to all listed tools except Heroku. Documentation is included on the website so that anyone can learn how to play. (It is lots of fun! Check it out!)
+                        </p>
+                        <div class="project__details">
+                            <p class="project__detail"><span class="emoji">💻</span>500 lines</p>
+                            <p class="project__detail"><span class="emoji">🌐</span><a href="https://lingo-plinko.herokuapp.com/" target="_blank">AVAILABLE ONLINE</a></p>
+                            <p class="project__detail"><span class="emoji">🕹️</span>Game</p>
+                            <p class="project__detail"><span class="emoji">📁</span>(private)</p>
+                        </div>
+                    </div>
+                    <div class="project__banner--javascript--express--pug--mongodb--heroku"></div>
+                </figure>
+            </div>
+            
+
+            <div class="columns is-mobile is-centered">
+                <div class="column is-8 has-text-centered project__btn">
+                    <button class="button is-info is-inverted is-fullwidth" id="btn-proj4" onclick="showHideProj(4)">theheinfamily.com</button>
+                </div>
+            </div>
+            <div class="project__container" id="proj4">
+                <figure class="project">
+                    <div class="project__content">
+                        <div class="project__title">
+                            <h3 class="project__heading">theheinfamily.com</h3>
+                            <div class="project__tag project__tag--html">HTML</div>
+                            <div class="project__tag project__tag--css">CSS</div>
+                            <div class="project__tag project__tag--aws">AWS</div>
+                            <div class="project__tag project__tag--bulma">BULMA.IO</div>
+                        </div>
+                        <p class="project__description">
+                            Well... you are looking at it! This website is hosted on an Amazon S3 Bucket on Amazon Web Services and the domain name was purchased from GoDaddy. This website is intended for use by my entire family but as it turns out they are not excited about writing their webpages (it might have to do with the fact that they don't know HTML or CSS). While most of the styling is written by me, bulma.io is used for some elements, like buttons.
+                        </p>
+                        <div class="project__details">
+                            <p class="project__detail"><span class="emoji">💻</span>500 lines</p>
+                            <p class="project__detail"><span class="emoji">🌐</span><a href="http://www.theheinfamily.com/anthony.html" target="_blank">AVAILABLE ONLINE</a></p>
+                            <p class="project__detail"><span class="emoji">📁</span>(private)</p>
+                        </div>
+                    </div>
+                    <div class="project__banner--html--css--aws--bulma"></div>
+                </figure>
+            </div>
+            
+        </section>
+                
+        <section class="section contact-me" id="contact">
+            <div class="container">
+                <h2>Stay in Touch</h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-centered">
+                        <p>In descending order of use:</p>
+                        <br>
+                        <a class="social-media-link" href="mailto:anhein@princeton.edu" id="social-media-mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                        &nbsp;
+                        <span class="social-media-link has-tooltip-bottom" id="social-media-phone" data-tooltip="732-977-4104"><i class="fas fa-phone"></i></span>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-github" href="https://github.com/AnthonyHein" target="_blank"><i class="fab fa-github"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-instagram" href="https://www.instagram.com/ant_hein57/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-linkedin" href="https://www.linkedin.com/in/anthein57/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-facebook" href="https://www.facebook.com/anthony.hein.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                        &nbsp;
+                        <a class="social-media-link" id="social-media-twitter" href="https://twitter.com/AntHein57" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                
+        <section class="section riddle">
+            <div class="container">
+                <h2>Minigame&nbsp;&nbsp;<i class="fas fa-gamepad"></i></h2>
+                <p class="has-text-centered">I lied... this is actually a riddle, not a game.</p>
+                <p class="has-text-centered">Where does T > 3, 10 > 3, S > 10 (sometimes), and T > 10?</p>
+                <br>
+                <form onsubmit="event.preventDefault(); checkAnswer();">
+                    <div class="field">
+                        <div class="control has-icons-left" style="width:75%;">
+                            <input class="input" type="text" id="riddle-answer" name="name" placeholder="Hmm..... think of different ways to verbally interpret the 'greater than' symbol.">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-question"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" class="button is-info is-outlined submit-btn">Check Answer</button>
+                </form>
+                <br>
+                <p><span id="riddle-won">&nbsp;</span></p>
+            </div>
+        </section>
+        
+        <section class="section fun-facts">
+            <div class="container">
+                <h2>Fun Facts, Skills, and Memberships</h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-left">
+                        <div class="content">
+                            Fun Facts -- Did you know?
+                            <ul class="ul">
+                                <li class="li">I drive a decommissioned sheriff's car (need an electrician to get the sirens working).</li>
+                                <li class="li">I am the 81st best player in the world for the mobile game Pew Pew 2 in Pacifism mode.</li>
+                                <li class="li">I plan to name my kid Seven Eight Hein.</li>
+                                <li class="li">I have achieved every star on COD: MW 2 Special Ops (special thanks to <a href="michael.html" target="_blank">Michael</a>).</li>
+                                <li class="li">Without realizing who she was, I asked <a href="https://en.wikipedia.org/wiki/Chloe_Kim" target="_blank">Chloe Kim</a> if she brought a horse to campus.</li>
+                                <li class="li">I went blind for 5 minutes in 2017.</li>
+                                <li class="li">I am 25% Chinese, but my Chinese grandmother was adopted and raised by Italians.</li>
+                            </ul>
+                            Fun Skills -- I can...
+                            <ul class="ul">
+                                <li class="li">solve a Rubik's Cube (45.67 PR)</li>
+                                <li class="li">run a 5K (18:49 PR)</li>
+                                <li class="li">spin pizza dough</li>
+                                <li class="li">play the tenor saxophone</li>
+                                <li class="li">perform magic tricks</li>
+                                <li class="li">recite the cube root of any perfect cube less than 1,000,000</li>
+                                <li class="li">throw a playing card into a foam board</li>
+                                <li class="li">construct stick bombs (<a href="https://www.youtube.com/watch?v=GtnZc1dujgg" target="_blank">check out this one, not mine</a>)</li>
+                                <li class="li"><a href="https://drive.google.com/file/d/1-978-ni3PvmqjzQsQhjpVQb5aABcWuVe/view?usp=sharing" target="_blank">moonwalk</a>, <a href="https://drive.google.com/file/d/1-EXpAxTYKh_2SaeEpuXKudMw7y_WOPlx/view?usp=sharing" target="_blank">backward worm</a>, <a href="https://drive.google.com/file/d/1-8rP3JHuS-pWZTJg5hUxheQZd232C0Pm/view?usp=sharing" target="_blank">flip</a>, and c-walk</li>
+                            </ul>
+                            Fun Memberships -- I am a...
+                            <ul class="ul">
+                                <li class="li">
+                                    <a href="https://www.lefthandersday.com/" target="_blank">Left-Handers Club Member</a>
+                                </li>
+                                <li class="li">
+                                    <a href="http://dozenal.org/" target="_blank">Dozenal Society of America Member</a>
+                                </li>
+                                <li class="li">
+                                    <a href="http://www.christianglobaloutreach.org/" target="_blank">Christian Global Outreach Ordained Minister</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section sandwiches">
+            <div class="container">
+                <h2>~95 Theses Against Sandwich Nomenclature</h2>
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-8 has-text-left">
+                        <p style="text-decoration: underline">
+                            Scenario 1
+                        </p>
+                        <br>
+                        <p>
+                            It is around noon on a gorgeous Sunday. You are outside trying to prove <a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture" target="_blank">Goldbach's conjecture</a> when mom calls you in for lunch. Awaiting you on the kitchen table, in all its blazing glory, is none other than a delightful turkey sandwich.
+                        </p>
+                        <br>
+                        <p style="text-decoration: underline">
+                            Scenario 2
+                        </p>
+                        <br>
+                        <p>
+                            You are abducted by the dictator of the Galactic Confederacy, <a href="https://en.wikipedia.org/wiki/Xenu" target="_blank">Xenu</a>, who reveals his plan to transport you to a volcano in his DC-8-like spacecraft and kill you with a hydrogen bomb. His alien troops start to surround you and press you from all sides very tightly. However, you manage to use your cellphone to call the head of the <a href="https://en.wikipedia.org/wiki/Space_force" target="_blank">Space Force</a> and cry out, "Help! I am trapped in an alien sandwich!". 
+                        </p>
+                        <br>
+                        <p style="text-decoration: underline">
+                            What's going on here?
+                        </p>
+                        <br>
+                        <p>
+                            Now, the problem is that the two ways these scenarios refer to sandwiches is inconsistent. The first scenario refers to a sandwich by its <em>contents</em>, in this case the cold meats. However, the second scenario refers to a sandwich by <em>that which does the job of surrounding</em> the contents or holds it together. Furthermore, this is interesting because flipping the nomenclature in either scenario renders the sentence hopelessly nondescript.
+                            <br><br>
+                            That is, what if your mom had called, "Come get your <em>bread</em> sandwich?". Well, what is in it? Is it something you like? Maybe. Maybe not.
+                            <br><br>
+                            Similarly, what if you used your precious seconds on the phone with the head of the Space Force to plead, "Help! I am trapped in an <em>&lt;insert name&gt;</em> sandwich!". Why should the head of the Space Force be compelled to take action? There is no discernible threat.
+                            <br><br>
+                            Additionally, if the receiving party in either scenario was expecting the other nomenclature, problems may ensue. For example, the Space Force head may interpret this to be that <em>you</em> are doing the sandwiching, if he expects that a sandwich is named by its meat. That is, maybe you are bullying an alien by sandwiching the said alien, in which case, again, the Space Force head would not help, instead maybe he would send PETA, which I would imagine would be marvelously unprepared for the situation.
+                        </p>
+                        <br>
+                        <p style="text-decoration: underline">
+                            What should we do?
+                        </p>
+                        <br>
+                        <p>
+                            It is my proposal that we use "andwich" when we are attempting to describe an object which has a surrounding structure by the contents inside the surroundings, and that we use "sandwich" when we are attempting to describe an object which has a surrounding structure by the surroundings. This nomenclature mimics the definition they achieve and makes it clear in all cases what the object of interest or threat is. Under this convention, we would say, "Thanks for this <em>ham andwich</em> mom!" while the second scenario stays the same.
+                            <br><br>
+                            Don't agree with me? Well, as they say, it's my way, or Xenu's highway.
+                            <br><br>
+                            - Anthony Hein
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <footer>
             <div class="content">
                 <p>Created by Anthony N. Hein</p>
-                <p>Last updated June 2020.</p>
+                <p>Last updated July 2020.</p>
                 <p>Visit my family's site <a href="/">here</a>.</p>
                 <div>
                     Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
@@ -515,6 +637,7 @@
         <script type="text/javascript" src="resources/js/programming-language-script.js"></script>
         <script type="text/javascript" src="resources/js/riddle-script.js"></script>
         <script type="text/javascript" src="resources/js/navbar-script.js"></script>
+        <script type="text/javascript" src="resources/js/show-projects-script.js"></script>
     </body>
     
 </html>

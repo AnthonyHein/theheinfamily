@@ -136,7 +136,7 @@ nav {
 /* ----------------------------------------------- */
 
 .mouse-mania {
-    background-color: #F8F8F8;
+    background-color: #FFF;
 }
 
 .goal-mouse {
@@ -162,7 +162,7 @@ nav {
 /* ----------------------------------------------- */
 
 .indiana-jones {
-    background-color: #FFF;
+    background-color: #F8F8F8;
 }
 
 .letter-platform {
@@ -196,7 +196,7 @@ nav {
 /* ----------------------------------------------- */
 
 .intro {
-    background-color: #FFF;
+    background-color: #F8F8F8;
 }
 
 .profile-pic {
@@ -370,6 +370,184 @@ nav {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* ----------------------------------------------- */
+/* PROJECTS */
+/* ----------------------------------------------- */
+
+.projects {
+    background-color: #F8F8F8;
+    color: #1E2A45;
+}
+
+.project__btn {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.project__container {
+    margin: 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.project {
+    margin: 0;
+    max-width: 800px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
+
+    display: flex;
+    align-items: stretch;
+}
+
+.project__content {
+    margin: 0;
+    flex: 1;
+    background: white;
+    padding: 35px 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project__title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project__heading {
+    margin: 0;
+    font-size: 20px;
+    margin-right: auto;
+}
+
+.project__tag {
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 100px;
+    margin-left: 7px;
+}
+
+.project__description {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.project__details {
+    margin: 0;
+    display: flex;
+    margin-top: auto;
+}
+
+.project__detail {
+    margin: 0;
+
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+    margin: 0;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+#btn-proj1 {
+    color: #00ADD8;
+    border: 1px solid #00ADD8;
+    border-radius: 4px;
+}
+
+#btn-proj2 {
+    color: #3572A5;
+    border: 1px solid #3572A5;
+    border-radius: 4px;
+}
+
+#btn-proj3 {
+    color: #D8C84F;
+    border: 1px solid #D8C84F;
+    border-radius: 4px;
+}
+
+#btn-proj4 {
+    color: #E34C26;
+    border: 1px solid #E34C26;
+    border-radius: 4px;
+}
+
+.project__banner--golang--golang {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #00ADD8, #00ADD8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__banner--python--googleapiconsole {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #3572A5, #F4B400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.project__banner--javascript--express--pug--mongodb--heroku {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #D8C84F, #589636, #7673C0, #2F2F2F, #A86454);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__banner--html--css--aws--bulma {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #E34C26, #563D7C, #FF9900, #00D1B2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__tag--python { background-color: #3572A5; }
+.project__tag--golang { background-color: #00ADD8; }
+.project__tag--c { background-color: #555555; }
+.project__tag--javascript { background-color: #D8C84F; }
+.project__tag--java { background-color: #B07219; }
+.project__tag--r { background-color: #198CE7; }
+.project__tag--html { background-color: #E34C26; }
+.project__tag--css { background-color: #563D7C; }
+.project__tag--postgresql { background-color: #0064A5; }
+.project__tag--sqlalchemy { background-color: #383737; }
+.project__tag--mongodb { background-color: #589636; }
+.project__tag--express { background-color: #2F2F2F; }
+.project__tag--pug { background-color: #A86454; }
+.project__tag--flask { background-color: #00675F; }
+.project__tag--googleapiconsole { background-color: #F4B400; }
+.project__tag--heroku { background-color: #7673C0; }
+.project__tag--aws { background-color: #FF9900; }
+.project__tag--bulma { background-color: #00D1B2; }
 
 /* ----------------------------------------------- */
 /* FOOTER */

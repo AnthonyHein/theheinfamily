@@ -1,10 +1,11 @@
 function drawChart0() {
     var data = google.visualization.arrayToDataTable([
         ['Language', 'Percent of Code'],
-        ['Python',      62],
+        ['Python',      60],
         ['Javascript',  14],
         ['HTML',        10],
-        ['R',           10],
+        ['Golang',      7],
+        ['R',           5],
         ['CSS',         3],
         ['SQL',         1],
     ]);
@@ -97,7 +98,8 @@ function drawChart3() {
         ['Verilog', 6, '#0099C6'],
         ['Javascript', 5, '#DD4477'],
         ['R', 3, '#66AA00'],
-        ['ARMv8', 2, '#B82E2E'],
+        ['ARMv8', 1, '#B82E2E'],
+        ['Golang', 1, '#316395'],
     ]);
     
     var options = {

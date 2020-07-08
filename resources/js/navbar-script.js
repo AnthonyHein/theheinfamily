@@ -2,32 +2,37 @@ $(document).ready(function() {
     
     $("#intro-btn").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#intro").offset().top
+            scrollTop: $("#intro").offset().top - 100
         }, 1000);
     });
     $("#education-btn").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#education").offset().top
+            scrollTop: $("#education").offset().top - 100
         }, 1000);
     });
     $("#work-btn").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#work").offset().top
+            scrollTop: $("#work").offset().top - 100
         }, 1000);
     });
     $("#languages-btn").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#languages").offset().top
+            scrollTop: $("#languages").offset().top - 100
         }, 1000);
     });
     $("#extra-btn").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#extra").offset().top
+            scrollTop: $("#extra").offset().top - 100
         }, 1000);
     });
     $("#contact-btn").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#contact").offset().top
+            scrollTop: $("#contact").offset().top - 100
+        }, 1000);
+    });
+        $("#projects-btn").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#projects").offset().top - 100
         }, 1000);
     });
 
