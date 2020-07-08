@@ -390,7 +390,7 @@ nav {
     padding-bottom: 20px;
     box-sizing: border-box;
     color: #444;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-weight: 400;
@@ -465,7 +465,7 @@ nav {
 
 .emoji {
     margin: 0;
-    font-size: 25px;
+    font-size: 23px;
     margin-right: 5px;
 }
 
@@ -490,6 +490,31 @@ nav {
 #btn-proj4 {
     color: #E34C26;
     border: 1px solid #E34C26;
+    border-radius: 4px;
+}
+
+
+#btn-proj5 {
+    color: #3572A5;
+    border: 1px solid #3572A5;
+    border-radius: 4px;
+}
+
+#btn-proj6 {
+    color: #3572A5;
+    border: 1px solid #3572A5;
+    border-radius: 4px;
+}
+
+#btn-proj7 {
+    color: #3572A5;
+    border: 1px solid #3572A5;
+    border-radius: 4px;
+}
+
+#btn-proj8 {
+    color: #3572A5;
+    border: 1px solid #3572A5;
     border-radius: 4px;
 }
 
@@ -521,10 +546,46 @@ nav {
     justify-content: center;
 }
 
-.project__banner--html--css--aws--bulma {
+.project__banner--html--css--javascript--aws--bulma {
     margin: 0;
     flex: 0 0 50px;
-    background: linear-gradient(to bottom, #E34C26, #563D7C, #FF9900, #00D1B2);
+    background: linear-gradient(to bottom, #E34C26, #563D7C, #D8C84F, #FF9900, #00D1B2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__banner--mealqueue {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #3572A5, #00675F, #F29111, #383737, #E34C26, #563D7C, #D8C84F, #7673C0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__banner--python--java {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #3572A5, #B07219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__banner--shakehand {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #3572A5, #00675F, #F4B400, #563D7C, #383737, #0064A5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__banner--zage {
+    margin: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #3572A5, #F4B400);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,6 +609,8 @@ nav {
 .project__tag--heroku { background-color: #7673C0; }
 .project__tag--aws { background-color: #FF9900; }
 .project__tag--bulma { background-color: #00D1B2; }
+.project__tag--bootstrap { background-color: #563D7C; }
+.project__tag--mysql { background-color: #F29111 }
 
 /* ----------------------------------------------- */
 /* FOOTER */

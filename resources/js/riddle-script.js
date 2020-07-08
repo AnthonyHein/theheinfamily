@@ -14,7 +14,7 @@ function checkAnswer() {
     console.log(hash);
     if (hash == 1852442505 || hash == 1787798377)
     {
-        document.getElementById('riddle-won').textContent = "Really?? This is incredible, nobody gets this right. Want to play Stratego sometime?";
+        document.getElementById('riddle-won').textContent = "Really?? This is incredible, nobody gets this right. Want to play sometime?";
     }
     return false;
 }
